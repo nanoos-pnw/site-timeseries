@@ -1,0 +1,62 @@
+
+
+--------------------------------------------------------------------------------
+                     The dataset scored 59 out of 60 points                     
+                              during the cf check                               
+--------------------------------------------------------------------------------
+                               Scoring Breakdown:                               
+
+
+                                 High Priority                                  
+--------------------------------------------------------------------------------
+    Name                            :Priority: Score
+2.2 Valid netCDF data types             :3:     7/7
+2.3 Legal variable names                :3:     7/7
+2.4 Unique dimensions                   :3:     7/7
+2.5.1 _FillValue outside of valid range :3:     1/1
+2.6.1 Global Attribute Conventions incl :3:     1/1
+2.6.2 Convention Attributes             :3:     2/2
+3.1 Variables contain valid units for t :3:     5/5
+3.3 Standard Names                      :3:     5/5
+4 Axis attributes and coordinate variab :3:    15/15
+4 Coordinate Variable latitude contains :3:     1/1
+4 Coordinate Variable longitude contain :3:     1/1
+4.3 Vertical coordinates contain valid  :3:     2/2
+4.3.1 Vertical dimension coordinates co :3:     1/1
+4.4 Time coordinate variable and attrib :3:     4/4
+5.2 Latitude and longitude coordinates  :3:     0/1
+
+
+--------------------------------------------------------------------------------
+                  Reasoning for the failed tests given below:                   
+
+
+Name                             Priority:     Score:Reasoning
+--------------------------------------------------------------------------------
+5.2 Latitude and longitude coordinates :3:     0/ 1 :  
+    sea_water_temperature              :3:     0/ 1 :  
+        coordinates_reference_itself   :3:     0/ 1 : Variable
+                                                      sea_water_temperature's
+                                                      coordinate references
+                                                      itself
+5.3 Is reduced horizontal grid         :2:     0/ 1 :  
+    sea_water_temperature              :2:     0/ 1 :  
+        is_reduced_horizontal_grid     :2:     0/ 1 : Coordinate longitude's
+                                                      dimension, position, is
+                                                      not a dimension of
+                                                      sea_water_temperature,
+                                                      Coordinate depth's
+                                                      dimension, position, is
+                                                      not a dimension of
+                                                      sea_water_temperature
+9.5 Discrete Geometry                  :2:     2/ 3 :  
+    time_bnds                          :2:     0/ 1 :  
+        check_coordinates              :2:     0/ 1 : The variable time_bnds
+                                                      does not have associated
+                                                      coordinates
+2.4 Dimension order                    :1:    13/14 : Variable time_bnds has a
+                                                      non-space-time dimension
+                                                      after space-time-
+                                                      dimensions
+4.4.1 Time and calendar                :1:     2/ 3 : Variable time_bnds should
+                                                      have a calendar attribute
