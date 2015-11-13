@@ -20,7 +20,7 @@
 - [Advice: THREDDS/TDS 4.5 (dev) or 4.3 (stable)? (2014 Sept)](https://groups.google.com/forum/#!topic/ioos_tech/FJsf8lVjvz4)
 
 ## IOOS compliance checker
-- My tests on Craig's nc file. Reported on the same "Example CF1.6 NetCDF file" email thread Craig started
+- My tests on Craig's V1 nc file (http://agate.coas.oregonstate.edu:8080/thredds/catalog/NDBC/catalog.html?dataset=NDBC/NDBC46050v1.nc). Reported on the same "Example CF1.6 NetCDF file" email thread Craig started
 ```
 I ran two configurations only: cf "test", and lenient vs normal "criteria". Here's the statement for one of them:
 compliance-checker --test=cf --criteria=lenient NDBC46050.nc > iooscompcheck_cf_lenient_NDBC46050.log
