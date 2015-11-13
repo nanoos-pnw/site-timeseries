@@ -25,9 +25,9 @@
 I ran two configurations only: cf "test", and lenient vs normal "criteria". Here's the statement for one of them:
 compliance-checker --test=cf --criteria=lenient NDBC46050.nc > iooscompcheck_cf_lenient_NDBC46050.log
 ```
---------------------------------------------------------------------------------
+
 Reasoning for the failed tests given below:                   
---------------------------------------------------------------------------------
+
 5.2 	Latitude and longitude coordinates     0/ 1 :  
 	sea_water_temperature                  0/ 1 :  
 	coordinates_reference_itself           0/ 1 : Variable sea_water_temperature's coordinate references itself
