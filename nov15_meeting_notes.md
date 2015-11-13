@@ -29,3 +29,6 @@ OSG
 shared code as much as possible (python)
 
 OceanSITES file structure
+
+NCEI SECOORA example file:
+http://data.nodc.noaa.gov/thredds/dodsC/ioos/secoora/usf.bcp.ngwlms/usf.bcp.ngwlms_2015_02_01_18.nc.html
