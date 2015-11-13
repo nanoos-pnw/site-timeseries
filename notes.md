@@ -25,6 +25,31 @@
 I ran two configurations only: cf "test", and lenient vs normal "criteria". Here's the statement for one of them:
 compliance-checker --test=cf --criteria=lenient NDBC46050.nc > iooscompcheck_cf_lenient_NDBC46050.log
 ```
+--------------------------------------------------------------------------------
+Reasoning for the failed tests given below:                   
+--------------------------------------------------------------------------------
+5.2 	Latitude and longitude coordinates     0/ 1 :  
+	sea_water_temperature                  0/ 1 :  
+	coordinates_reference_itself           0/ 1 : Variable sea_water_temperature's coordinate references itself
+
+5.3 	Is reduced horizontal grid             0/ 1 :  
+	sea_water_temperature                  0/ 1 :  
+        is_reduced_horizontal_grid             0/ 1 : Coordinate longitude's dimension, position, is not a dimension of
+                                                  sea_water_temperature, Coordinate latitude's dimension, position,
+                                                  is not a dimension of sea_water_temperature,Coordinate depth's
+ 						  dimension, position, is not a dimension of sea_water_temperature
+
+9.5 	Discrete Geometry                      2/ 3 :  
+    	time_bnds                              0/ 1 :  
+	check_coordinates                      0/ 1 : The variable time_bnds does not have associated coordinates
+
+2.4 	Dimension order                       13/14 : Variable time_bnds has a non-space-time dimension
+                                                      after space-time-dimensions
+
+4.4.1 	Time and calendar                     2/ 3 : Variable time_bnds should have a calendar attribute
+
+--------------------------------------------------------------------------------
+
 - My conda env for running compliance checker
 - See also the CF Checker, http://puma.nerc.ac.uk/cgi-bin/cf-checker.pl
 
