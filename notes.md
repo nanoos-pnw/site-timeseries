@@ -23,7 +23,7 @@
 - My tests on Craig's V1 nc file (http://agate.coas.oregonstate.edu:8080/thredds/catalog/NDBC/catalog.html?dataset=NDBC/NDBC46050v1.nc). Reported on the same "Example CF1.6 NetCDF file" email thread Craig started
 ```
 I ran two configurations only: cf "test", and lenient vs normal "criteria". Here's the statement for one of them:
-compliance-checker --test=cf --criteria=lenient NDBC46050.nc > iooscompcheck_cf_lenient_NDBC46050.log
+compliance-checker --test=cf --criteria=lenient NDBC46050v1.nc > iooscompcheck_cf_lenient_NDBC46050.log
 ```
 
 Reasoning for the failed tests given below:                   
