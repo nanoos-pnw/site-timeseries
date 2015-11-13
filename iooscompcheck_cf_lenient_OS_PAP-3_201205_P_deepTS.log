@@ -1,0 +1,139 @@
+
+
+--------------------------------------------------------------------------------
+                    The dataset scored 154 out of 165 points                    
+                              during the cf check                               
+--------------------------------------------------------------------------------
+                               Scoring Breakdown:                               
+
+
+                                 High Priority                                  
+--------------------------------------------------------------------------------
+    Name                            :Priority: Score
+2.2 Valid netCDF data types             :3:    12/12
+2.3 Legal variable names                :3:    12/12
+2.4 Unique dimensions                   :3:    12/12
+2.5.1 _FillValue outside of valid range :3:     4/4
+2.6.1 Global Attribute Conventions incl :3:     1/1
+2.6.2 Convention Attributes             :3:     9/9
+3.1 Variables contain valid units for t :3:     8/8
+3.3 Standard Names                      :3:     8/8
+3.4 Ancillary Variables                 :3:     7/9
+3.5 Flags and flag attributes           :3:    60/60
+4 Axis attributes and coordinate variab :3:    12/12
+4 Coordinate Variable latitude contains :3:     1/1
+4 Coordinate Variable longitude contain :3:     1/1
+4.3 Vertical coordinates contain valid  :3:     4/4
+4.3.1 Vertical dimension coordinates co :3:     1/1
+4.4 Time coordinate variable and attrib :3:     2/2
+5.2 Latitude and longitude coordinates  :3:     0/8
+9.1 Feature Types                       :3:     0/1
+
+
+--------------------------------------------------------------------------------
+                  Reasoning for the failed tests given below:                   
+
+
+Name                             Priority:     Score:Reasoning
+--------------------------------------------------------------------------------
+3.4 Ancillary Variables                :3:     7/ 9 :  
+    LATITUDE                           :3:     0/ 1 : ancillary var LATITUDE_QC
+                                                      does not exist
+    LONGITUDE                          :3:     0/ 1 : ancillary var LONGITUDE_QC
+                                                      does not exist
+5.2 Latitude and longitude coordinates :3:     0/ 8 :  
+    CNDC                               :3:     0/ 1 :  
+        coordinates_reference_itself   :3:     0/ 1 : Variable CNDC's coordinate
+                                                      references itself
+    CNDC_QC                            :3:     0/ 1 :  
+        coordinates_reference_itself   :3:     0/ 1 : Variable CNDC_QC's
+                                                      coordinate references
+                                                      itself
+    PRES                               :3:     0/ 1 :  
+        coordinates_reference_itself   :3:     0/ 1 : Variable PRES's coordinate
+                                                      references itself
+    PRES_QC                            :3:     0/ 1 :  
+        coordinates_reference_itself   :3:     0/ 1 : Variable PRES_QC's
+                                                      coordinate references
+                                                      itself
+    PSAL                               :3:     0/ 1 :  
+        coordinates_reference_itself   :3:     0/ 1 : Variable PSAL's coordinate
+                                                      references itself
+    PSAL_QC                            :3:     0/ 1 :  
+        coordinates_reference_itself   :3:     0/ 1 : Variable PSAL_QC's
+                                                      coordinate references
+                                                      itself
+    TEMP                               :3:     0/ 1 :  
+        coordinates_reference_itself   :3:     0/ 1 : Variable TEMP's coordinate
+                                                      references itself
+    TEMP_QC                            :3:     0/ 1 :  
+        coordinates_reference_itself   :3:     0/ 1 : Variable TEMP_QC's
+                                                      coordinate references
+                                                      itself
+9.1 Feature Types                      :3:     0/ 1 :  
+5.3 Is reduced horizontal grid         :2:     0/ 8 :  
+    CNDC                               :2:     0/ 1 :  
+        is_reduced_horizontal_grid     :2:     0/ 1 : Coordinate LATITUDE's
+                                                      dimension, LATITUDE, is
+                                                      not a dimension of CNDC,
+                                                      Coordinate LONGITUDE's
+                                                      dimension, LONGITUDE, is
+                                                      not a dimension of CNDC
+    CNDC_QC                            :2:     0/ 1 :  
+        is_reduced_horizontal_grid     :2:     0/ 1 : Coordinate LATITUDE's
+                                                      dimension, LATITUDE, is
+                                                      not a dimension of
+                                                      CNDC_QC, Coordinate
+                                                      LONGITUDE's dimension,
+                                                      LONGITUDE, is not a
+                                                      dimension of CNDC_QC
+    PRES                               :2:     0/ 1 :  
+        is_reduced_horizontal_grid     :2:     0/ 1 : Coordinate LATITUDE's
+                                                      dimension, LATITUDE, is
+                                                      not a dimension of PRES,
+                                                      Coordinate LONGITUDE's
+                                                      dimension, LONGITUDE, is
+                                                      not a dimension of PRES
+    PRES_QC                            :2:     0/ 1 :  
+        is_reduced_horizontal_grid     :2:     0/ 1 : Coordinate LATITUDE's
+                                                      dimension, LATITUDE, is
+                                                      not a dimension of
+                                                      PRES_QC, Coordinate
+                                                      LONGITUDE's dimension,
+                                                      LONGITUDE, is not a
+                                                      dimension of PRES_QC
+    PSAL                               :2:     0/ 1 :  
+        is_reduced_horizontal_grid     :2:     0/ 1 : Coordinate LATITUDE's
+                                                      dimension, LATITUDE, is
+                                                      not a dimension of PSAL,
+                                                      Coordinate LONGITUDE's
+                                                      dimension, LONGITUDE, is
+                                                      not a dimension of PSAL
+    PSAL_QC                            :2:     0/ 1 :  
+        is_reduced_horizontal_grid     :2:     0/ 1 : Coordinate LATITUDE's
+                                                      dimension, LATITUDE, is
+                                                      not a dimension of
+                                                      PSAL_QC, Coordinate
+                                                      LONGITUDE's dimension,
+                                                      LONGITUDE, is not a
+                                                      dimension of PSAL_QC
+    TEMP                               :2:     0/ 1 :  
+        is_reduced_horizontal_grid     :2:     0/ 1 : Coordinate LATITUDE's
+                                                      dimension, LATITUDE, is
+                                                      not a dimension of TEMP,
+                                                      Coordinate LONGITUDE's
+                                                      dimension, LONGITUDE, is
+                                                      not a dimension of TEMP
+    TEMP_QC                            :2:     0/ 1 :  
+        is_reduced_horizontal_grid     :2:     0/ 1 : Coordinate LATITUDE's
+                                                      dimension, LATITUDE, is
+                                                      not a dimension of
+                                                      TEMP_QC, Coordinate
+                                                      LONGITUDE's dimension,
+                                                      LONGITUDE, is not a
+                                                      dimension of TEMP_QC
+9.5 Discrete Geometry                  :2:     3/ 4 :  
+                                       :2:     0/ 1 : The cf_role featureType is
+                                                      not properly defined.
+4.4.1 Time and calendar                :1:     0/ 1 : Variable TIME should have
+                                                      a calendar attribute
