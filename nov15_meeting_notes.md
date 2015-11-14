@@ -22,3 +22,6 @@ conda create -n dmac_cmop_nov15 python=2.7 ipython-notebook requests xray matplo
 - shared code as much as possible (python)
 - OceanSITES file structure
 - NCEI SECOORA example file: http://data.nodc.noaa.gov/thredds/dodsC/ioos/secoora/usf.bcp.ngwlms/usf.bcp.ngwlms_2015_02_01_18.nc.html
+- links to the [NODC nc template examples](http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/#templatesexamples) for TimeSeries, as cdl's:
+  - Orthogonal: [CDL Template](http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/timeSeriesOrthogonal.cdl) and [Specific CDL Example](http://data.nodc.noaa.gov/testdata/netCDFTemplateExamples/timeSeries/BodegaMarineLabBuoy.cdl) 
+  - Incomplete: [CDL Template](http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/timeSeriesIncomplete.cdl) and [Specific CDL Example](http://data.nodc.noaa.gov/testdata/netCDFTemplateExamples/timeSeries/BodegaMarineLabBuoyCombined.cdl)
