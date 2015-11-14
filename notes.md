@@ -1,5 +1,5 @@
 # NANOOS handling of long time series
-11/12/2015. Messy notes and issues for discussion.
+11/12/2015. Messy notes and issues for discussion. Includes some notes from the meeting itself.
 
 ## Issues with changing deployment configurations
 
@@ -20,6 +20,8 @@
 - [Advice: THREDDS/TDS 4.5 (dev) or 4.3 (stable)? (2014 Sept)](https://groups.google.com/forum/#!topic/ioos_tech/FJsf8lVjvz4)
 
 ## IOOS compliance checker
+- My conda env for running compliance checker
+- See also the CF Checker, http://puma.nerc.ac.uk/cgi-bin/cf-checker.pl
 - My tests on Craig's V1 nc file (http://agate.coas.oregonstate.edu:8080/thredds/catalog/NDBC/catalog.html?dataset=NDBC/NDBC46050v1.nc). Reported on the same "Example CF1.6 NetCDF file" email thread Craig started
 ```
 I ran two configurations only: cf "test", and lenient vs normal "criteria". Here's the statement for one of them:
@@ -27,7 +29,7 @@ compliance-checker --test=cf --criteria=lenient NDBC46050v1.nc > iooscompcheck_c
 ```
 
 Reasoning for the failed tests given below:                   
-
+```
 5.2 	Latitude and longitude coordinates     0/ 1 :  
 	sea_water_temperature                  0/ 1 :  
 	coordinates_reference_itself           0/ 1 : Variable sea_water_temperature's coordinate references itself
@@ -47,11 +49,7 @@ Reasoning for the failed tests given below:
                                                       after space-time-dimensions
 
 4.4.1 	Time and calendar                     2/ 3 : Variable time_bnds should have a calendar attribute
-
---------------------------------------------------------------------------------
-
-- My conda env for running compliance checker
-- See also the CF Checker, http://puma.nerc.ac.uk/cgi-bin/cf-checker.pl
+```
 
 ## NCEI (NODC/NCEI Templates, Archiving)
 - https://github.com/ioos/cc-plugin-ncei
