@@ -130,7 +130,6 @@ netcdf.putAtt(ncid, VarID, 'history', 'Quality controlled at NOAA NDBC');
 
 % Define variables.
 VarIdLatitude = netcdf.defVar(ncid, 'latitude' , 'float', []);
-%VarIdLatitude = netcdf.defVar(ncid, 'latitude' , 'float', PosDimID);
 netcdf.putAtt(ncid, VarIdLatitude, 'units', 'degrees_north');
 netcdf.putAtt(ncid, VarIdLatitude, 'long_name', 'latitude');
 netcdf.putAtt(ncid, VarIdLatitude, 'standard_name', 'latitude');
