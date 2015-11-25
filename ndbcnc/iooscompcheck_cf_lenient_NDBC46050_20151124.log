@@ -1,0 +1,53 @@
+Running Compliance Checker on the dataset from: nc/NDBC46050.nc
+
+
+--------------------------------------------------------------------------------
+                    The dataset scored 162 out of 164 points                    
+                              during the cf check                               
+--------------------------------------------------------------------------------
+                               Scoring Breakdown:                               
+
+
+                                 High Priority                                  
+--------------------------------------------------------------------------------
+    Name                            :Priority: Score
+Variable names                          :3:    20/20
+axis                                    :3:    31/31
+convention_attrs                        :3:     2/2
+conventions                             :3:     1/1
+data_types                              :3:    20/20
+dimension_names                         :3:    20/20
+dimensional_vertical                    :3:     5/5
+fill_value_outside_valid_range          :3:    10/10
+latitude                                :3:     4/4
+longitude                               :3:     4/4
+std_name                                :3:    16/18
+time                                    :3:     8/8
+units                                   :3:     9/9
+vertical                                :3:    12/12
+
+
+--------------------------------------------------------------------------------
+                  Reasoning for the failed tests given below:                   
+
+
+Name                             Priority:     Score:Reasoning
+--------------------------------------------------------------------------------
+std_name                               :3:    16/18 :  
+    average_wave_period                :3:     0/ 1 :  
+        legal                          :3:     0/ 1 : The standard name
+                                                      'average_wave_period' is
+                                                      not in standard name table
+    dominant_wave_period               :3:     0/ 1 :  
+        legal                          :3:     0/ 1 : The standard name
+                                                      'dominant_wave_period' is
+                                                      not in standard name table
+var                                    :2:   121/122 :  
+    time_bnds                          :2:     2/ 3 :  
+        check_coordinates              :2:     0/ 1 : The variable time_bnds
+                                                      does not have associated
+                                                      coordinates
+dimension_order                        :1:    39/40 : Variable time_bnds has a
+                                                      non-space-time dimension
+                                                      after space-time-
+                                                      dimensions
