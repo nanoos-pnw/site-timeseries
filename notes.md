@@ -1,6 +1,22 @@
 # NANOOS handling of long time series
 11/12/2015. Messy notes and issues for discussion. Includes some notes from the meeting itself.
 
+## Compliance Checker
+- from 11/24/2015, but added here on 1/12/2017
+```bash
+export PATH=$HOME/miniconda/bin:$PATH
+source activate ioos_compcheck
+
+ncdump -h nc/NDBC46050.nc > NDBC46050_20151124.cdl
+compliance-checker --test=cf --criteria=lenient nc/NDBC46050.nc > iooscompcheck_cf_lenient_NDBC46050_20151124.log
+
+ncdump -h nc/NDBC46029.nc > NDBC46029_20151124.cdl
+compliance-checker --test=cf --criteria=lenient nc/NDBC46029.nc > iooscompcheck_cf_lenient_NDBC46029_20151124.log
+
+ncdump -h nc/NDBC46088.nc > NDBC46088_20151124.cdl
+compliance-checker --test=cf --criteria=lenient nc/NDBC46088.nc > iooscompcheck_cf_lenient_NDBC46088_20151124.log
+```
+
 ## Issues with changing deployment configurations
 
 ## Craig's nc file from NDBC
