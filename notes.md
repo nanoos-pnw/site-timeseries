@@ -1,5 +1,6 @@
 # NANOOS handling of long time series
-11/12/2015. Messy notes and issues for discussion. Includes some notes from the meeting itself.
+- 1/18/2017. Some edits from this meeting
+- 11/12/2015. Messy notes and issues for discussion. Includes some notes from the meeting itself.
 
 ## Compliance Checker
 - from 11/24/2015, but added here on 1/12/2017
@@ -37,7 +38,7 @@ compliance-checker --test=cf --criteria=lenient nc/NDBC46088.nc > iooscompcheck_
 
 ## IOOS compliance checker
 - My conda env for running compliance checker
-- See also the CF Checker, http://puma.nerc.ac.uk/cgi-bin/cf-checker.pl
+- See also the NERC "CF Checker", http://puma.nerc.ac.uk/cgi-bin/cf-checker.pl, and NASA PODAAC "Metadata Compliance Checker", http://podaac-uat.jpl.nasa.gov/mcc/
 - My tests on Craig's V1 nc file (http://agate.coas.oregonstate.edu:8080/thredds/catalog/NDBC/catalog.html?dataset=NDBC/NDBC46050v1.nc). Reported on the same "Example CF1.6 NetCDF file" email thread Craig started
 ```
 I ran two configurations only: cf "test", and lenient vs normal "criteria". Here's the statement for one of them:
