@@ -1,0 +1,3 @@
+# NOTES ON CREATING NETCDF DSG FILES
+
+notes, links, etc
