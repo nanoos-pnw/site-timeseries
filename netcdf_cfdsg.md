@@ -8,7 +8,7 @@
 
 - https://github.com/pyoceans/pocean-core/
 - Here's the implementation of the "OrthogonalMultidimensionalTimeseries" (om) `timeSeries` DSG: https://github.com/pyoceans/pocean-core/blob/master/pocean/dsg/timeseries/om.py. Other `timeSeries` DSG's (cm, im, ir) are currently not implemented; only stub modules have been created.
-- The best `pocean-core` Jupyter notebook I could find is [adcp.ipynb](http://nbviewer.jupyter.org/github/pyoceans/pocean-core/blob/master/docs/notebooks/adcp.ipynb), for `timeSeriesProfile`
+- The best `pocean-core` example Jupyter notebook can be found in [IOOS Notebook Gallery](http://ioos.github.io/notebooks_demos/notebooks/2018-02-27-pocean-timeSeries-demo/), for `timeSeriesProfile`
 - Note that apparenlty Kyle Wilcox is working on an implementation that relies on `xarray`. It's not on master yet, so it must be on Kyle's fork or on a branch.
 
 
