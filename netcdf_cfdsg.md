@@ -20,3 +20,13 @@
 
 - [CMOP NCEI archive files, as organized in the NCEI THREDDS server](https://data.nodc.noaa.gov/thredds/catalog/ioos/nanoos/catalog.html). They're under a NANOOS "folder", as the subfolder "ohsucmop". The individual netcdf files are presented (each file encompassing one month or less, in one deployment of one instrument in one station); they have not been aggregated via ncML into logical groups (one deployment of one instrument in one station).
 - Craig's "NDBC" long time series nc files (I'll provide links)
+
+
+## Miscellaneous, related issues
+
+### `cdm_data_type` confusion and mess (particularly for "Station" vs "timeseries")
+- See my notes on this in Don's and my pocean Jupyter notebook. Copy them here
+- For great reference and discussions on this topic, see:
+    - https://github.com/BobSimons/erddap/issues/4
+    - https://github.com/Unidata/thredds/issues/72
+    - https://github.com/ioos/compliance-checker/issues/457
