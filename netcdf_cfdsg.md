@@ -25,7 +25,7 @@
 ## Miscellaneous, related issues
 
 ### `cdm_data_type` confusion and mess (particularly for "Station" vs "timeseries")
-- See my notes on this in Don's and my pocean Jupyter notebook. Copy them here
+- Should `cdm_data_type` be set to `Station` or `TimeSeries`?! NCEI reccommends the former, and THREDDS appears to require it; but ERDDAP and pocean-core the latter, effectively. OceanSITES apparently also uses `Station`, or at least the ESTOC files and an OceanSITES CDL template
 - For great reference and discussions on this topic, see:
     - https://github.com/BobSimons/erddap/issues/4
     - https://github.com/Unidata/thredds/issues/72
