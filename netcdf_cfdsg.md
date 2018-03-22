@@ -17,7 +17,6 @@
 
 - https://github.com/nanoos-pnw/site-timeseries (this repository)
 - https://github.com/nanoos-pnw/NCEI-archiving
-
 - [CMOP NCEI archive files, as organized in the NCEI THREDDS server](https://data.nodc.noaa.gov/thredds/catalog/ioos/nanoos/catalog.html). They're under a NANOOS "folder", as the subfolder "ohsucmop". The individual netcdf files are presented (each file encompassing one month or less, in one deployment of one instrument in one station); they have not been aggregated via ncML into logical groups (one deployment of one instrument in one station).
 - Craig's "NDBC" long time series nc files (I'll provide links)
 
