@@ -1,8 +1,14 @@
-# NOTES ON UNDERSTANDING, CREATING AND USING NETCDF DSG FILES
+# NOTES ON UNDERSTANDING, CREATING AND USING NETCDF DSG FILES, AND CONFIGURING ERDDAP FOR THESE DATASETS
 
 - [CF DSG description](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.6/build/cf-conventions.html#discrete-sampling-geometries). Official resource, but can seem fairly abstract.
 - [NCEI NetCDF Templates v2.0](https://www.nodc.noaa.gov/data/formats/netcdf/v2.0/) Some additional, helpful descriptions and comparisons of the different options for organizing data for each DSG type (eg, for `timeSeries`). Includes sample netcdf files and corresponding CDL's.
 - https://github.com/USGS-R/netcdf.dsg aims to implement *all* `timeSeries` DSG's, in R. Maintained by the USGS-CIDA group, a terrific team who also do Python.
+- *3/30/2018: We ended up NOT using `pocean-core`, b/c we realized `OrthogonalMultidimensionalTimeseries` did not meet our needs. We're now creating Incomplete Multidimensional time series files, rolled out using `xarray`.* We'll post some of this code here, later.
+
+
+## ERDDAP configuration
+- https://github.com/lsetiawan/erddapds/, using scripts found at https://github.com/lsetiawan/erddapds/blob/master/erddapds/scripts/
+
 
 ## `pocean-core`
 
