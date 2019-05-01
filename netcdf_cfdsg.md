@@ -8,6 +8,8 @@
 
 ## ERDDAP configuration
 - https://github.com/lsetiawan/erddapds/, using scripts found at https://github.com/lsetiawan/erddapds/blob/master/erddapds/scripts/
+- [IOOS ERDDAP configuration Gold Standard](https://github.com/ioos/erddap-gold-standard)
+- [Multi-depth graph example (experimental), based on an Incomplete Multidimensional Array time series data structure](http://data.nanoos.org/deverddap/tabledap/OOI_CE01ISSM.graph?time%2Csea_water_temperature%2Cdepth&time%3E=2018-05-03T00%3A00%3A00Z&time%3C=2018-05-10T00%3A00%3A00Z&.draw=markers&.marker=5%7C5&.color=0x000000&.colorBar=BlueWhiteRed%7CD%7C%7C%7C%7C5&.bgColor=0xffccccff)
 
 
 ## `pocean-core`
